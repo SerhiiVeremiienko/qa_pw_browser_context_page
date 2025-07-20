@@ -7,6 +7,13 @@ export class ProfilePage {
     this.articleDescription = page.locator('a.preview-link p');
     this.articleTags = page.locator('ul.tag-list > li');
     this.homeButton = page.getByRole('link', { name: 'Home' });
+    this.settingsButton = page.getByRole('link', { name: 'Settings' });
+    this.updateProfileButton = page.getByRole('button', {
+      name: 'Update Settings',
+    });
+    this.logOutButton = page.getByRole('button', {
+      name: 'Or click here to logout.',
+    });
   }
 
   async open(username) {
@@ -34,6 +41,24 @@ export class ProfilePage {
   async clickHomeButton() {
     await test.step(`Click on the 'Home' button`, async () => {
       await this.homeButton.click();
+    });
+  }
+
+  async clickSettignsButton() {
+    await test.step(`Click on the 'Settings' button`, async () => {
+      await this.settingsButton.click();
+    });
+  }
+
+  async clickUpdateProfileButton() {
+    await test.step(`Click on the 'Update Profile' button`, async () => {
+      await this.updateProfileButton.click();
+    });
+  }
+
+  async clickLogOutButtton() {
+    await test.step(`Click on the 'Log Out' button`, async () => {
+      await this.logOutButton.click();
     });
   }
 

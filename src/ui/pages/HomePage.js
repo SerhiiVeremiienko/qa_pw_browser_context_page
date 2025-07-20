@@ -65,7 +65,7 @@ export class HomePage {
   }
 
   async assertEmptyStateIsVisible() {
-    await test.step(`Assert the 'No articles..' empty state is visible`, async () => {
+    await test.step(`Assert check 'No articles..' empty state`, async () => {
       await expect(this.emptyState).toBeVisible();
     });
   }

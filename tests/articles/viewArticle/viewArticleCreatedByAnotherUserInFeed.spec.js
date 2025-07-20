@@ -1,7 +1,6 @@
 import { test } from '../../_fixtures/fixtures';
 import { HomePage } from '../../../src/ui/pages/HomePage';
 import { createArticle } from '../../../src/ui/actions/articles/createArticle';
-import { updateArticle } from '../../../src/ui/actions/articles/updateArticle';
 
 import { signUpUser } from '../../../src/ui/actions/auth/signUpUser';
 
