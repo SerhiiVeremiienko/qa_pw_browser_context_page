@@ -44,7 +44,7 @@ export class ProfilePage {
     });
   }
 
-  async clickSettignsButton() {
+  async clickSettingsButton() {
     await test.step(`Click on the 'Settings' button`, async () => {
       await this.settingsButton.click();
     });
@@ -56,7 +56,7 @@ export class ProfilePage {
     });
   }
 
-  async clickLogOutButtton() {
+  async clickLogOutButton() {
     await test.step(`Click on the 'Log Out' button`, async () => {
       await this.logOutButton.click();
     });

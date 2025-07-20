@@ -7,7 +7,7 @@ export async function updatePassword(page, newPassword) {
     const signUpPage = new SignUpPage(page);
     const profilePage = new ProfilePage(page);
 
-    await profilePage.clickSettignsButton();
+    await profilePage.clickSettingsButton();
     await signUpPage.fillPasswordField(newPassword);
     await profilePage.clickUpdateProfileButton();
   });
